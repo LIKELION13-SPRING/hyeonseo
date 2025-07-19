@@ -1,4 +1,4 @@
-package springbootdev.test;
+package springbootdev.test.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -18,6 +18,10 @@ public class Member {
 
     @Column(name = "name", nullable = false)
     private String name;
+
+    public void changeName(String name){
+        this.name = name;
+    }
 
 
 }
